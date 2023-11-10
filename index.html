@@ -14,9 +14,11 @@
         
 </head>
     <style>
+
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Merriweather', serif;
     font-family: 'Playfair Display', serif;
     font-family: 'Roboto', sans-serif;
@@ -28,22 +30,24 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 .container {
-    background: none; /* Remove background color from the container */
-}
-
-form {
     text-align: center;
     justify-content: center;
     margin-top: 200px;
-    background-color: rgb(147, 141, 134);
+}
+
+form {
+    background-color: rgba(147, 141, 134, 0.8); /* Adjusted background color with opacity */
     width: 400px;
     height: 400px;
     position: relative;
     bottom: 150px;
-    left: 510px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 h1 {
@@ -72,6 +76,7 @@ h1 {
     font-size: 20px;
     color: gray;
 }
+
 </style>
 
 <body>
